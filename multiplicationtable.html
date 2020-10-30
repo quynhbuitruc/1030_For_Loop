@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng cửu chương từ 2 tới 9</title>
+    <style>
+        table {
+            border: 1px solid grey;
+        }
+
+        tr,
+        td {
+            border: 1px solid grey;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        multiplication = "<table>"
+        for (let x = 1; x <= 9; x++) {
+            multiplication += "<tr>"
+            for (let y = 2; y < 10; y++) {
+                multiplication += "<td>" + y + "x" + x + "=" + x * y + "</td>"
+            }
+            multiplication += "</tr>" + "\n"
+        }
+        multiplication += "</table>"
+        document.write(multiplication)
+    </script>
+</body>
+
+</html>
